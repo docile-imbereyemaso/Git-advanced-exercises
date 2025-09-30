@@ -153,6 +153,7 @@ Before starting this exercise, Go through **Branching Model** and **Contribution
 
    **Challenge:** Stash your current changes in the `main` branch using `git stash`.
 
+
 2. **Retrieving Stashed Changes:**
 
    - Later, when you're ready to resume working on those stashed changes, you can retrieve them.
