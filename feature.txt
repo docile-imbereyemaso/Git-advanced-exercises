@@ -1,1 +1,1 @@
-This is the feature file
+This is the feature, this is a conflict that I am creating in this file. Let me create the conflict on this line 
