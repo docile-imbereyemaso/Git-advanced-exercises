@@ -1,3 +1,37 @@
+user@LAPTOP-31B23MFI MINGW64 ~/Desktop/New folder/Git-advanced-exercises (dev)
+$ git tag v1.0
+
+user@LAPTOP-31B23MFI MINGW64 ~/Desktop/New folder/Git-advanced-exercises (dev)
+$ git status
+On branch dev
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitIgnore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+user@LAPTOP-31B23MFI MINGW64 ~/Desktop/New folder/Git-advanced-exercises (dev)
+$ git add .gitIgnore && git commit -m"Create gitIgnore file"
+[dev 0261a4b] Create gitIgnore file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitIgnore
+
+user@LAPTOP-31B23MFI MINGW64 ~/Desktop/New folder/Git-advanced-exercises (dev)
+$ git tag -d v1.0
+Deleted tag 'v1.0' (was c1392bb)
+
+user@LAPTOP-31B23MFI MINGW64 ~/Desktop/New folder/Git-advanced-exercises (dev)
+$ git push origin dev
+Enumerating objects: 24, done.
+Counting objects: 100% (24/24), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (19/19), done.
+Writing objects: 100% (22/22), 2.04 KiB | 1.02 MiB/s, done.
+Total 22 (delta 11), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (11/11), completed with 1 local object.
+To https://github.com/docile-imbereyemaso/Git-advanced-exercises.git
+   562a8a1..0261a4b  dev -> dev
+
 # Git Exercises
 
 This comprehensive exercise combines essential Git skills, from manipulating history to advanced branching strategies.
@@ -152,6 +186,7 @@ Before starting this exercise, Go through **Branching Model** and **Contribution
    - Imagine you're working on some changes in the `main` branch but need to attend to something urgent. You don't want to lose your uncommitted work.
 
    **Challenge:** Stash your current changes in the `main` branch using `git stash`.
+
 
 2. **Retrieving Stashed Changes:**
 
